@@ -1,6 +1,6 @@
 # OpenCode Sandbox
 
-A collection of small Python projects including a CLI calculator and a Snake game.
+A collection of small Python projects including a CLI calculator, a Snake game, and a Sudoku browser game.
 
 ## Projects
 
@@ -22,11 +22,29 @@ pip install pygame
 python3 snake.py
 ```
 
+### Sudoku Browser Game (`sudoku/`)
+A full-stack Sudoku game with Python/Flask backend and HTML/CSS/JS frontend. Features a custom Sudoku generator, solver, and validator with no external Sudoku packages.
+
+**Features:**
+- Generate new puzzles with Easy/Medium/Hard difficulty
+- Click cells or use arrow keys to navigate
+- Number pad or keyboard (1-9) to fill cells
+- Check button validates your solution
+- Hint button reveals correct values
+- Highlights related rows, columns, and boxes
+
+```bash
+pip install flask
+cd sudoku
+python3 app.py
+```
+Then open http://127.0.0.1:5000 in your browser.
+
 ## Getting Started
 
 ### Prerequisites
 - Python 3.6+
-- pip (for Snake game dependencies)
+- pip (for dependencies)
 
 ### Installation
 1. Clone the repository:
@@ -35,9 +53,9 @@ git clone https://github.com/JuliusAngwenyi/opencode-sandbox.git
 cd opencode-sandbox
 ```
 
-2. Install dependencies (for Snake game):
+2. Install dependencies:
 ```bash
-pip install pygame
+pip install pygame flask
 ```
 
 ### Running
@@ -50,6 +68,13 @@ python3 calc.py <expression>
 ```bash
 python3 snake.py
 ```
+
+**Sudoku Game:**
+```bash
+cd sudoku
+python3 app.py
+```
+Then open http://127.0.0.1:5000 in your browser.
 
 ## License
 
